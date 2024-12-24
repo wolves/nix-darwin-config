@@ -39,7 +39,14 @@
     };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
+  outputs = {
+    self,
+    nix-darwin,
+    nixpkgs,
+    nix-homebrew,
+    home-manager,
+    ...
+  }@inputs:
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#bird
