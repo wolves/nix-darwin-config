@@ -46,9 +46,9 @@ in {
     pkgs.zlib
     pkgs.zoxide
 
-    # pkgs.skimpdf
     pkgs.postman
     pkgs.qbittorrent
+    pkgs.skimpdf
   ];
 
   users.users.cstingl = {
